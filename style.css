@@ -26,9 +26,17 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--sans);
-    background-color: var(--aqua);
     color: var(--white);
     font-size: var(--font-size);
+
+    /*
+    height: 100vh;
+    background-image: url("spaceMove.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.8;
+    */
 }
 
 h1,
@@ -376,5 +384,3 @@ ul {
     font-size: 20px;
     text-align: center;
 }
-
-

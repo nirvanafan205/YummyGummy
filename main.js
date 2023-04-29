@@ -46,6 +46,7 @@ function enlargeImage(image) {
   var newImage = document.createElement("img");
   newImage.src = image.src;
   enlargedImage.appendChild(newImage);
+
   enlargedImage.className = "enlarged";
   document.body.appendChild(enlargedImage);
 
@@ -53,9 +54,7 @@ function enlargeImage(image) {
   enlargedImage.addEventListener('click', function (event) {
     if (event.target === enlargedImage) {
       document.body.removeChild(enlargedImage);
+
     }
   });
 }
-
-
-// carousel psa cards
