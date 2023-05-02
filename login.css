@@ -1,0 +1,128 @@
+/* background */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  
+}
+
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url(stars.png) repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url(twinkling.png) repeat top center;
+  z-index: 1;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+  background: transparent url(clouds.png) repeat top center;
+  z-index: 2;
+  opacity: .4;
+  animation: move-clouds-back 200s linear infinite;
+}
+
+/* user login form */
+
+
+.loginForm {
+  position: relative;
+  width: 380px;
+  height: 420px;
+  border-radius: 8px;
+
+  display: block;
+  z-index: 3;
+
+
+  overflow: hidden;
+
+}
+
+
+.loginForm form {
+  position: absolute;
+  inset: 4px;
+  background-color: #222;
+  padding: 50px 40px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.loginForm::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+.loginForm a {
+  text-align: center;
+  padding-top: 20px;
+  color: ;
+}
