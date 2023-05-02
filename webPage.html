@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/cd01da16da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Yummy~Gummy</title>
+</head>
+
+<body>
+
+    <!--Audio queues-->
+    <audio id="audio" src="pokeSong.mp3"></audio>
+    <audio id="mario" src="Mario-coin-sound.mp3"></audio>
+
+    <!--Navigation Bar-->
+
+    <div id="top">
+
+        <nav>
+            <ul>
+                <li>
+                    <h1>
+                        <i class="fa-solid fa-radiation"></i>
+                        Yummy~Gummy
+                        <i class="fa-solid fa-radiation"></i>
+                        </a>
+                    </h1>
+                </li>
+
+                <li><a href="index.html#pokeCards">Latest Deals</a></li>
+
+                <li><a href="inventory.html">Inventory</a></li>
+
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="gradient"></div>
+
+    <div class="AboutbackgroundColor">
+
+        <section id="about">
+
+            <h2>Welcome PokeBros!!!</h2>
+
+            <p class="intro">
+                Are you disappointed with Evolving Lies? Perhaps scalpers are still on the rise with Japanese cards.
+                Well, you found the right place for your place to fuel your pokediction!
+                Here at Njoy Games we may be able to help you with decent priced singles and your next fix for
+                poke-needs! Give us a try and check what we have to offer you to...
+            <p onmouseenter="playAudio()" onmouseleave="pauseAudio()" id="Moto">Catch 'Em all!</span>
+
+            </p>
+
+            <div class="gallery">
+                <img src="books.jpg" alt="Inside store" id="store">
+                <img src="store.jpg" alt="store" id="store">
+            </div>
+
+            <div class="location">
+
+                <ul>
+                    <li>
+                        <h4 onmouseover="mplayAudio()" onmouseout="mstopAudio()">Let's get poke-rich!</h4>
+                    </li>
+
+                    <li>+1-818-709-0599</li>
+
+                    <li>service@njoy.us</li>
+
+                    <li><a href="https://www.google.com/maps/dir/34.230723,-118.4513566/Njoy+Games+%26+Comics/@34.231929,-118.5289172,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x80c29bb460760dd5:0x5aa5b227cefd5e53!2m2!1d-118.5358135!2d34.2314159"
+                            target="_blank">8820 Reseda Blvd Northridge CA 91324</a></li>
+
+                    <!-- Checks if it's open or closed-->
+                    <li>
+                        <div id="status"></div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+
+    </div>
+
+    <div class="pokeCardsColor">
+
+        <section id="pokeCards">
+
+            <h2>What're ya buyin?</h2>
+
+            <div class="gallery">
+
+                <div class="card">
+                    <img src="galarnfriends.jpg" alt="Galar and Friends VMAX Climax" class="enlarge" onclick="enlargeImage(this)">
+                    <div class="desc">Galar and friends: $90 </div>
+                    <div class="new">Galar and friends: $65</div>
+                </div>
+
+                <div class="card">
+                    <img src="charizard.jpg" alt="XY Evolutions Charizard" class="enlarge" onclick="enlargeImage(this)">
+                    <div class="desc">Holo Charizard: $55</div>
+                    <div class="new">Holo Charizard: $25</div>
+                </div>
+
+                <div class="card">
+                    <img src="eveelutions.jpg" alt="Leafeon and Espeon Alt Art" class="enlarge" onclick="enlargeImage(this)">
+                    <div class="desc">Espeon Alt Art: $95</div>
+                    <div class="new">Espeon Alt Art: $70</div>
+                    <div class="desc">Leafeon Alt Art: $75</div>
+                    <div class="new">Leafeon Alt Art: $50</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="gradient"></div>
+
+    <footer>
+        <h2 class="end">Matthew Garcia &middot; Front-end Software Engineer</a></h2>
+        <p><a href="index.html#top">top of page</a></p>
+        <p><small>&copy; 2023 Matthew Garcia All rights reserved</small></p>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
