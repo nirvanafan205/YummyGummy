@@ -28,15 +28,7 @@ body {
     font-family: var(--sans);
     color: var(--white);
     font-size: var(--font-size);
-
-    /*
-    height: 100vh;
-    background-image: url("spaceMove.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    opacity: 0.8;
-    */
+    background-color: rebeccapurple;
 }
 
 h1,
@@ -89,7 +81,12 @@ nav li:first-child {
 nav a {
     color: red;
     text-decoration: none;
-    display: block;
+    /* Allows the home button to be in front */
+    display:block;
+    position: relative;
+    z-index: 3
+
+
 }
 
 nav a:hover {
