@@ -14,7 +14,6 @@ body {
   
 }
 
-
 @keyframes move-twink-back {
   from {
     background-position: 0 0;
@@ -67,35 +66,31 @@ body {
 }
 
 /* user login form */
-
-
 .loginForm {
   position: relative;
   width: 380px;
   height: 420px;
   border-radius: 8px;
-
   display: block;
   z-index: 3;
-
-
   overflow: hidden;
-
 }
-
 
 .loginForm form {
   position: absolute;
   inset: 4px;
-  background-color: #222;
+  background-color: black;
   padding: 50px 40px;
   border-radius: 15px;
   z-index: 2;
   display: flex;
   flex-direction: column;
-
 }
 
+.loginForm h1  {
+  color: white;
+  text-align: center;
+}
 
 .loginForm::before {
   content: '';
@@ -117,8 +112,7 @@ body {
   left: -50%;
   width: 380px;
   height: 420px;
-  color: ;
-    background: linear-gradient(0deg, transparent, transparent, royalblue , royalblue , royalblue);
+  background: linear-gradient(0deg, transparent, transparent, royalblue , royalblue , royalblue);
   z-index: 1;
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
@@ -140,4 +134,8 @@ body {
 .loginForm a {
   text-align: center;
   padding-top: 20px;
+}
+
+.loginForm label {
+  color: white;
 }
