@@ -88,7 +88,7 @@ body {
 }
 
 .loginForm h1  {
-  color: white;
+  color: blue;
   text-align: center;
 }
 
@@ -137,5 +137,17 @@ body {
 }
 
 .loginForm label {
-  color: white;
+  color: blue;
+}
+
+.loginForm #spacing {
+  padding-bottom: 25px;
+}
+
+.loginForm #userName {
+  width: 150px;
+}
+
+.loginForm #passWord {
+  width: 150px;
 }
